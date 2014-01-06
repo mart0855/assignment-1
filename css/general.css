@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+
+html, body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.main,
+.copyright{
+	width: 90%;
+	margin: 1rem auto;
+}
+
+img{
+	width: 100%;
+}
+
+body{
+	background-image:url(../images/column.svg);
+	background-size: 100%;
+	font-size: 100%;
+	line-height: 1.5rem;
+	opacity: .5;
+}
+
+.baseline{
+	background-image: url(../images/baseline.svg);
+}
+
+/* --------------------------------------------------------------------- Masthead */
+
+header{
+	background-color: #666;
+	height: 6.5rem;
+	width: auto;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 10%;
+	top: 1rem;
+}
+
+header h1{
+	font-size: 40px;
+	position: absolute;
+	left: 20%;
+	top: 1.5rem;
+}
+
+.hide-text{
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.nav-btn,
+.nav-btn:link
+.nav-btn:visited{
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: 5%;
+	height: 40px;
+	width: 40px;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+}
+
+/* styles hover state of nav icon */
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #ccc;
+}
+
+/* styles for nav links */
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+	display: block;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	border-top: 1px solid #fff;
+	padding: 1rem;
+}
+
+.nav a:hover,
+.nav a:focus{
+	background-color: #ccc;
+}
+
+
+.nav{
+	position: relative;
+	z-index: 100;
+}
+/* Toggle Nav Styles */
+
+.nav-top{
+	max-height: 0;
+	overflow: hidden;
+	-moz-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+.nav-top[data-state="expanded"] {
+	max-height: 50em;
+
+}
+
+
+/* ----------------------------------------------------------------------Content */
+
+
+/* ----------------------------------------------------------------------Table */
+
+#calender{ /* Div id */
+	/*display: none;*/
+	margin: 2rem auto 2rem;
+	width: 80%;
+}
+ 
+#calender caption { /*Month Year */
+	border: 3px solid #000000;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 10px;
+	font: 1.5em bold;
+	padding: 4px;
+}
+
+#calender table {
+	display: table-cell;
+	border: 1px solid #000000;
+	border-collapse: collapse; /*borders collapsed into a single border */
+}
+ 
+#calender th {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #000000;
+	line-height: 1.5em;
+}
+ 
+#calender td {
+	border: 1px solid #000000;
+	width: 130px;
+	height: 110px;
+	text-align: center;
+	vertical-align: top;
+	padding: 10px;
+	font-size: 17px;
+	line-height: 1.2rem;
+}
+ 
+#calender .white { /* weekday td cell style */
+	background: #fff;
+}
+ 
+#calender .grey { /* weekend td cell style */
+	background: #6F6D6D;
+	color: #E6F3FF;
+}
+ 
+#calender .clear1 {
+	clear: both;
+	line-height: 2em;
+}
+ 
+span.details {
+	color: #fff;
+}
+
+#price{
+	margin: 2rem auto 2rem;
+	width: 80%;
+}
+	
+#price caption {
+	border: 3px solid #000000;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 10px;
+	font: 1.5em bold;
+	padding: 4px;
+}
+
+#price th {
+	background-color: #C3C3C3;
+	border: 3px double #000000;
+	padding: 2px 0;
+}
+
+#price td{
+	background: #fff;
+	border: 3px double #000000;
+	text-align: right;
+	padding: 2px
+}
